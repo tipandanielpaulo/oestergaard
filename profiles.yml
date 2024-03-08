@@ -1,0 +1,6 @@
+tech_int:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'C:\Users\Paulo\Documents\Interviews\oste\duckdb\mydb.db'

@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: kaggle_data
+    database: mydb 
+    schema: landing_csv
+    tables:
+      - name: l_ecommerce_data

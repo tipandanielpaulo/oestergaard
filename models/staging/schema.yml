@@ -1,0 +1,11 @@
+
+version: 2
+
+models:
+  - name: s_kaggle_data
+    description: "Kaggle Data"
+    columns:
+      - name: invoice_number
+        description: "Invoice number: Can have multiple items"
+        tests:
+          - not_null
