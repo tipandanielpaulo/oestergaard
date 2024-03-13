@@ -12,7 +12,7 @@ type_casting AS (
 		Quantity :: BIGINT AS quantity_sold, 
 		InvoiceDate :: DATETIME AS invoice_date, 
 		UnitPrice :: FLOAT AS unit_price, 
-		CustomerID :: INT AS customer_id,  -- can be null
+		CustomerID :: VARCHAR AS customer_id,  -- can be null
 		Country :: VARCHAR AS country
     FROM
         import_data

@@ -1,0 +1,31 @@
+
+version: 2
+
+models:
+  - name: a_sales
+    description: "This is a transactional data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers."
+    columns:
+      - name: invoice_date
+        description: Invoice Date and time. Numeric, the day and time when each transaction was generated.  
+      - name: invoice_day
+        description: Invoice Day Format.
+      - name: invoice_year
+        description: Invoice Year Format.
+      - name: country
+        description: Country name. Nominal, the name of the country where each customer resides. 
+      - name: invoice_number
+        description: Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation. 
+        tests:
+          - not_null
+      - name: stock_code
+        description: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.
+      - name: item_desc
+        description: Product (item) name. Nominal. 
+      - name: customer_id
+        description: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.
+      - name: unit_price
+        description: Unit price. Numeric, Product price per unit in sterling.       
+      - name: quantity_sold
+        description: The quantities of each product (item) per transaction. Numeric.  
+      - name: total_quantity_price
+        description: Quantity Sold multiplied by Unit Price.
